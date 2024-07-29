@@ -1,14 +1,14 @@
-"use client";
+'use client'
 
-import React from "react";
-import { motion } from "framer-motion";
+import React from 'react'
+import { motion } from 'framer-motion'
 import {
   slideInFromLeft,
   slideInFromRight,
-  slideInFromTop,
-} from "@/utils/motion";
-import { SparklesIcon } from "@heroicons/react/24/solid";
-import Image from "next/image";
+  slideInFromTop
+} from '@/utils/motion'
+import { SparklesIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image'
 
 const HeroContent = () => {
   return (
@@ -35,8 +35,8 @@ const HeroContent = () => {
           <span>
             Providing
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              {" "}
-              the best{" "}
+              {' '}
+              the best{' '}
             </span>
             project exprience
           </span>
@@ -56,7 +56,6 @@ const HeroContent = () => {
           Learn More!
         </motion.a>
       </div>
-
       <motion.div
         variants={slideInFromRight(0.8)}
         className="w-full h-full flex justify-center items-center"
@@ -69,7 +68,7 @@ const HeroContent = () => {
         />
       </motion.div>
     </motion.div>
-  );
-};
+  )
+}
 
-export default HeroContent;
+export default HeroContent
